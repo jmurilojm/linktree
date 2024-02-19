@@ -21,7 +21,7 @@ function isPrimo() {
     inNumero.value = '';
     inNumero.focus();
   } else {
-    outResultado.innerHTML = `O número ${numero} NÃO é Primo, pois ele possui ${totalDivisores} totalDivisores.`;
+    outResultado.innerHTML = `O número ${numero} NÃO é Primo, pois ele possui um total de ${totalDivisores} divisores.`;
     inNumero.value = '';
     inNumero.focus();
   }
