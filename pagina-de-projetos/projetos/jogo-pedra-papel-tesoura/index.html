@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="José Murilo">
+  <meta name="description" content="Jogo: Pedra, Papel e Tesoura">
+
+  <title>Jogo - Pedra, Papel e Tesoura</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+  <input class="tela" type="text" name="" id="tela" value="">
+
+  <div class="campo-placar">
+    <label class="placar" type="text" name="" id="placar-computador">0</label>
+
+    <span>x</span>
+
+    <label class="placar" type="text" name="" id="placar-jogador">0</label>
+  </div>
+
+  <div class="botoes">
+    <button class="btn" onclick="pedra()" type="" value=""><img src="midia/img-mao-pedra.png" alt="Mão pedra"></button>
+
+    <button class="btn" onclick="papel()" type="" value=""><img src="midia/img-mao-papel.png" alt="Mão papel"></button>
+
+    <button class="btn" onclick="tesoura()" type="" value=""><img src="midia/img-mao-tesoura.png" alt="Mão tesoura"></button>
+  </div>
+
+  <div>
+    <button class="limpar" id="limpar" type="reset">Zerar placar</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

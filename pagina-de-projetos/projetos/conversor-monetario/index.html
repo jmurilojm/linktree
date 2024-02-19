@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Conversor Monetário</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="programa">
+    <header>
+      <h1>Conversor Monetário</h1>
+    </header>
+
+    <section class="in">
+      <section>
+        <label for="">Converter <b>de</b>
+          <select name="" id="">
+            <option value="">R$ Real Brasileiro</option>
+          </select>
+        </label>
+
+        <label for="">Converter <b>para</b>
+          <select name="" id="inSelecao">
+            <option value="US$ Dólar">US$ Dólar Americano</option>
+            <option value="€ Euro">€ Euro</option>
+            <option value="BTC Biticoins">Bitcoins</option>
+          </select>
+        </label>
+
+        <label for="">Valor
+          <input type="text" name="" id="inValor" placeholder="R$ 0,00" class="inValor" id="inValor">
+        </label>
+
+        <input type="button" value="Converter" class="btConverter" id="btConverter">
+      </section>
+
+
+      <section class="out">
+        <div>
+          <img src="img/brasil.jpeg" alt="Bandeira do Brasil">
+          <p class="fonte-p">Real</p>
+          <p class"fonte-g"><b id="outValorDigitado">R$ 0,00</b></p>
+        </div>
+
+        <img src="img/seta-down.png" alt="Seta apontando para baixo">
+
+        <div>
+          <img id="imgBandeira" src="img/eua.jpeg" alt="Bandeira Americana">
+          <p id="nomeMoeda" class="fonte-p">Dólar Americano</p>
+          <p class="fonte-m"><b id="outValorConvertido">US$ 0,00</b></p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
