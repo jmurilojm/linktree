@@ -10,13 +10,16 @@
   border: 2px solid dodgerblue;
   padding: 10px;
 }
-h2, .butoes{
+h2, .botoes{
   text-align: center;
 }
 input{
   width: 50px;
   text-align: right;
 }
-.butoes button{
+.botoes{
+  margin: 40px 0;
+}
+.botoes button{
   margin: 0 5px;
 }
