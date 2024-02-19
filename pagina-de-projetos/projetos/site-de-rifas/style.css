@@ -1,0 +1,59 @@
+.principal{
+  width: 393px;
+  border: 1px solid black;
+  margin: auto;
+  min-height: 600px;
+}
+
+.imgProduto{
+  border-bottom: 1px solid black;
+  height: 200px;
+}
+.chamada{
+  background-color: white;
+  width: 70%;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: -15px;
+  border: 1px solid black;
+}
+.nomeProduto{
+  width: 90%;
+  margin: auto;
+}
+.sobre, .compra{
+  border: 1px solid orange;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.botoes, .botoesLivres{
+  text-align: center;
+}
+.botoes button{
+  width: 19%;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.botoesLivres button{
+  height: 25px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.botoesLivres input{
+  height: 25px;
+  margin: 0 15px;
+  text-align: center;
+}
+.pagar{
+  text-align: center;
+}
+.regras{
+  width: 90%;
+  margin: auto;
+}

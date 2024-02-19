@@ -1,0 +1,12 @@
+.rodape{
+  background-color: darkslategray;
+  border-top: 5px solid mediumspringgreen;
+  height: 40px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.rodape a{
+  color: white;
+  text-decoration: none;
+}

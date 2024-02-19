@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure,
+h1 {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 70px;
+}
+
+input {
+  font-size: 1.05rem;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding: 5px;
+}
+
+input[type=email],
+input[type=password] {
+  width: 250px;
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+input[type=submit],
+input[type=reset] {
+  width: 130px;
+  height: 35px;
+}
+
+input[type=submit] {
+  background: #1d495f;
+  color: #fff;
+}
+
+input[type=submit]:hover {
+  background: #cecece;
+  color: #1d495f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background: #ff6600;
+  color: #fff;
+}
+
+input[type=reset]:hover {
+  background: #cecece;
+  color: #ff6600;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: gray;
+}

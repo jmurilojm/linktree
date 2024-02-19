@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+
+body{
+  background-color: lightgray;
+  max-width: 600px;
+  margin: auto;
+}
+
+
+h1{
+  text-align: center;
+  margin: 4% 0;
+}
+
+
+.inEntrada{
+  display: flex;
+  width: 90%;
+  margin:5% auto;
+  height: 50px;
+}
+.inTexto{
+  width: 70%;
+  padding: 0 15px;
+}
+.btAdicionar{
+  width: 30%;
+  background-color: green;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+}
+
+
+.outTarefas{
+  width: 90%;
+  margin: auto;
+}
+.tarefa{
+  border: 1px solid gray;
+  background-color: #fff;
+  height: 50px;
+  margin-top: 2%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarefa .icone{
+  width: 15%;
+  text-align: center;
+}
+.tarefa .texto{
+  width: 55%;
+}
+.tarefa .lixeira{
+  width: 30%;
+  text-align: center;
+  background-color: red;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+.tarefa.feito{
+  background-color: lightgreen;
+}
+.tarefa.feito .icone span{
+  color: green;
+}
+.tarefa.feito .texto{
+  text-decoration: line-through;
+  color: gray;
+}
+.tarefa.feito .lixeira{
+  background-color: gray;
+}
