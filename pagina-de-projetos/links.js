@@ -1,47 +1,43 @@
 const links = [
   {
-    link: 'rgb',
-    nome: 'RGB'
+    link: 'area-cubica',
+    nome: 'Área Cúbica'
   },
   {
-    link: 'cor-hexadecimal',
-    nome: 'Cor Hexadecimal'
+    link: 'area-quadrada',
+    nome: 'Área Quadrada'
   },
   {
-    link: 'codigo-das-cores',
-    nome: 'Código das Cores'
-  },
-  {
-    link: 'tela-colorida',
-    nome: 'Tela Colorida'
-  },
-  {
-    link: 'cronometro',
-    nome: 'Cronômetro'
-  },
-  {
-    link: 'relogio',
-    nome: 'Relógio'
-  },
-  {
-    link: 'to-do-list',
-    nome: 'To Do List'
+    link: 'cadastro-numerico',
+    nome: 'Cadastro de Números'
   },
   {
     link: 'citacoes',
     nome: 'Citações'
   },
   {
+    link: 'pixel',
+    nome: 'Cm para Pixel'
+  },
+  {
+    link: 'codigo-das-cores',
+    nome: 'Código das Cores'
+  },
+  {
     link: 'conversor-monetario',
     nome: 'Conversor Monetário'
   },
   {
-    link: 'google',
-    nome: 'Tela Do Google'
+    link: 'cor-hexadecimal',
+    nome: 'Cor Hexadecimal'
   },
   {
-    link: 'google-tradutor',
-    nome: 'Tela G Tradutor'
+    link: 'cronometro',
+    nome: 'Cronômetro'
+  },
+  {
+    link: 'gerando-pdf',
+    nome: 'Gerando PDF'
   },
   {
     link: 'hora-do-dia',
@@ -56,6 +52,10 @@ const links = [
     nome: 'Jogo Pedra, Papel e Tesoura'
   },
   {
+    link: 'lista-tarefas',
+    nome: 'Lista de Tarefas'
+  },
+  {
     link: 'localizar-cep',
     nome: 'Localizar CEP'
   },
@@ -64,8 +64,16 @@ const links = [
     nome: 'Mudar Cor da Tela'
   },
   {
-    link: 'pixel',
-    nome: 'Cm para Pixel'
+    link: 'pixels',
+    nome: 'Pixels'
+  },
+  {
+    link: 'relogio',
+    nome: 'Relógio'
+  },
+  {
+    link: 'rgb',
+    nome: 'RGB'
   },
   {
     link: 'site-de-rifas',
@@ -76,39 +84,31 @@ const links = [
     nome: 'Site IEJPN'
   },
   {
-    link: 'tela-de-login',
-    nome: 'Tela de Login'
+    link: 'tela-colorida',
+    nome: 'Tela Colorida'
   },
   {
-    link: 'timer',
-    nome: 'Timer'
+    link: 'google',
+    nome: 'Tela Google'
+  },
+  {
+    link: 'google-tradutor',
+    nome: 'Tela Goolgle Tradutor'
+  },
+  {
+    link: 'tela-de-login',
+    nome: 'Tela Login'
   },
   {
     link: 'wikipedia',
     nome: 'Tela Wikipédia'
   },
   {
-    link: 'lista-tarefas',
-    nome: 'Lista de Tarefas'
+    link: 'timer',
+    nome: 'Timer'
   },
   {
-    link: 'area-cubica',
-    nome: 'Área Cúbica'
-  },
-  {
-    link: 'area-quadrada',
-    nome: 'Área Quadrada'
-  },
-  {
-    link: 'pixels',
-    nome: 'Pixels'
-  },
-  {
-    link: 'cadastro-numerico',
-    nome: 'Cadastro de Números'
-  },
-  {
-    link: 'gerando-pdf',
-    nome: 'Gerando PDF'
+    link: 'to-do-list',
+    nome: 'To Do List'
   }
 ]
