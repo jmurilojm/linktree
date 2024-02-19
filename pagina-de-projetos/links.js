@@ -68,6 +68,10 @@ const links = [
     nome: 'Mudar Cor da Tela'
   },
   {
+    link: 'numero-primo',
+    nome: 'Número Primo'
+  },
+  {
     link: 'pixels',
     nome: 'Pixels'
   },
