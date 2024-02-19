@@ -32,6 +32,10 @@ const links = [
     nome: 'Cor Hexadecimal'
   },
   {
+    link: 'cores-intervaladas',
+    nome: 'Cores com Intevalos'
+  },
+  {
     link: 'cronometro',
     nome: 'Cronômetro'
   },
