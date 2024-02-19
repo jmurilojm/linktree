@@ -15,6 +15,7 @@ h2, .butoes{
 }
 input{
   width: 50px;
+  text-align: right;
 }
 .butoes button{
   margin: 0 5px;
