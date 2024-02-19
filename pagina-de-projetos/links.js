@@ -36,6 +36,10 @@ const links = [
     nome: 'Cronômetro'
   },
   {
+    link: 'equacao-segundo-grau',
+    nome: 'Equação 2º Grau'
+  },
+  {
     link: 'gerando-pdf',
     nome: 'Gerando PDF'
   },

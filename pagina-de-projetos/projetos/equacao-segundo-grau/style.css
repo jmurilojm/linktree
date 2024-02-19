@@ -1,0 +1,21 @@
+.titulo,
+.rodape {
+  text-align: center;
+}
+
+.main {
+  width: 300px;
+  border-radius: 10px;
+  margin: auto;
+  border: 2px solid dodgerblue;
+  padding: 10px;
+}
+h2, .butoes{
+  text-align: center;
+}
+input{
+  width: 50px;
+}
+.butoes button{
+  margin: 0 5px;
+}
