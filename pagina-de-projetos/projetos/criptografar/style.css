@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .app {
@@ -53,4 +54,10 @@ body {
   background: white;
   color: dodgerblue;
   border: 3px solid dodgerblue;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
 }
