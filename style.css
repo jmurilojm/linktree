@@ -1,15 +1,17 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: borer-box;
+  box-sizing: border-box;
   font-family: monospace;
 }
 
 :root {
-  --cor-bg: #2C2839;
-  --cor-um: #1e90ff;
-  --cor-dois: #ffa500;
-  --cor-tres: #fff;
+  --cor-bg: #2C2839; /*cor de fundo*/
+  --cor-um: #1e90ff; /*azul*/
+  --cor-dois: #ffa500; /*laranja */
+  --cor-tres: #fff; /*branco*/
 }
 
 ::selection {
@@ -80,7 +82,7 @@
 
 .links a {
   padding: 20px 30px;
-  width: 80%;
+  width: 100%;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 2px;
