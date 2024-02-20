@@ -36,6 +36,10 @@ const links = [
     nome: 'Cores com Intevalos'
   },
   {
+    link: 'criptografar',
+    nome: 'Criptografar'
+  },
+  {
     link: 'cronometro',
     nome: 'Cronômetro'
   },
