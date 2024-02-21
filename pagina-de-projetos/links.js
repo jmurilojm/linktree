@@ -48,6 +48,10 @@ const links = [
     nome: 'Equação 2º Grau'
   },
   {
+    link: 'grafico',
+    nome: 'Geração de Gráfico'
+  },
+  {
     link: 'gerando-pdf',
     nome: 'Gerando PDF'
   },

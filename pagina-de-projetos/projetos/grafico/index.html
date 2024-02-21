@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="José Murilo">
+  <title>Gráfico</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Gráfico</h1>
+    <hr>
+    <p>
+      <label class="azul" for="inValor1">Valor 01:</label>
+    <input type="number" name="" id="inValor1" autofocus>
+    </p>
+    <p>
+      <label class="verde" for="inValor2">Valor 02:</label>
+      <input type="number" name="" id="inValor2">
+    </p>
+    <p>
+      <label class="vermelho" for="inValor3">Valor 03:</label>
+      <input type="number" name="" id="inValor3">
+    </p>
+    
+    <div class="box-grafico-barra">
+      <div class="barra barra-um" id="outBarra1">
+        <p id="valorNaBarra1">0.0%</p>
+      </div>
+      <div class="barra barra-dois" id="outBarra2">
+        <p id="valorNaBarra2">0.0%</p>
+      </div>
+      <div class="barra barra-tres" id="outBarra3">
+        <p id="valorNaBarra3">0.0%</p>
+      </div>
+    </div>
+    
+    <button id="btGerar">Gerar Gráfico</button>
+  </main>
+  
+  <footer>
+    <p><a href="https://www.linkedin.com/in/jmurilo" target="_blank">&copy; Desenvolvido por JMurilo | 2023 - 2024</a></p>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>
