@@ -60,8 +60,12 @@ const links = [
     nome: 'IMC'
   },
   {
+    link: 'jogo-cliques-na-tela',
+    nome: 'Jogo: Cliques na Tela'
+  },
+  {
     link: 'jogo-pedra-papel-tesoura',
-    nome: 'Jogo Pedra, Papel e Tesoura'
+    nome: 'Jogo: Pedra, Papel e Tesoura'
   },
   {
     link: 'lista-tarefas',
