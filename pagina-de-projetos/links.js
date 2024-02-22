@@ -49,11 +49,11 @@ const links = [
   },
   {
     link: 'grafico',
-    nome: 'Geração de Gráfico'
+    nome: 'Gerando um Gráfico'
   },
   {
     link: 'gerando-pdf',
-    nome: 'Gerando PDF'
+    nome: 'Gerando um PDF'
   },
   {
     link: 'hora-do-dia',
