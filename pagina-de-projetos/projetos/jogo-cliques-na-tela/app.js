@@ -55,6 +55,7 @@ function zerar() {
   reiniciar();// funcao chamada para reiniciar valores do botao de clique e interromper o setInterva().
   
   totalDeCliques = 0;
+  maiorTotal = 0;
   outMelhorPonto.innerText = 0;
   outCronometro.innerText = 5;
   outCliques.innerText = 0;
