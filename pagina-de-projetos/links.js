@@ -24,6 +24,10 @@ const links = [
     nome: 'Código das Cores'
   },
   {
+    link: 'consumo-eletrico',
+    nome: 'Consumo Elétrico'
+  },
+  {
     link: 'conversor-monetario',
     nome: 'Conversor Monetário'
   },
