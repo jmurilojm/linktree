@@ -28,6 +28,11 @@ function timer() {
 }
 
 function iniciar() {
+  if(!btClick.hasAttribute('disabled')){
+    // verifica se o play ja esta ativado.
+    return;
+  }
+  
   outMelhorPonto.innerText = maiorTotal;// coloca a pontuacao como melhor, caso seja ela maior que a anterior.
   
   btClick.addEventListener('touchstart', clicar); // coloca o escutador de toques.
