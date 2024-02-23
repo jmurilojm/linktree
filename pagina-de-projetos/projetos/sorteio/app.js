@@ -28,7 +28,7 @@ inNome.focus();
 
 function adicionar(){
   if(inNome.value === '' || inNome.value.length < 3){
-    alert('Valor inválido ou muito pequeno!');
+    alert('Valor inválido ou muito curto!');
     return;
   } // verifica se o valor de entrada está vazio ou se têm menos que 03 caracteres. Se isso ocorrer, uma mensagem de alerta será mostrada.
   
@@ -54,10 +54,22 @@ function listarNomes(){
 
 function sortear(){
   if(nomes.length === 0){
-    alert('Lista de Nomes está vazia!');
+    alert('Lista de Nomes, vazia!');
     cont = 1;
     return;
   } // antes de realizar o sorteio é verificado se existe nomes na lista de nomes. Caso não, um alerta será dado para que cadastre e possa seguir para as próximas alternativas.
+  
+  /*
+  // fazer um sorteio por cotas
+  const quantosSorteios = prompt('Quantos voce quer?');
+  
+  if(quantosSorteios > nomes.length){
+    alert(`Existem apenas ${nomes.length} cadastros!`)
+    return;
+  } // verifica se a quantidade de cadastrados exitem.
+  
+  for(let i = 0; i < quantosSorteios; i++){} // itera a quantidade solicitada, caso seja possivel.
+  */
   
   const nomeSorteado = Math.floor(Math.random() * nomes.length); // realiza o sorteio de um indice da lista de nomes.
   nomes = nomes.filter((nome, i) => {
