@@ -112,6 +112,10 @@ const links = [
     nome: 'Site IEJPN'
   },
   {
+    link: 'sorteio',
+    nome: 'Sorteio Fácil'
+  },
+  {
     link: 'tela-colorida',
     nome: 'Tela Colorida'
   },
