@@ -140,7 +140,7 @@ const links = [
     nome: 'Timer'
   },
   {
-    link: 'triangulos'
+    link: 'triangulos',
     nome: 'Tipo do Triângulo'
   },
   {
