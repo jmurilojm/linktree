@@ -140,6 +140,10 @@ const links = [
     nome: 'Timer'
   },
   {
+    link: 'triangulos'
+    nome: 'Tipo do Triângulo'
+  },
+  {
     link: 'to-do-list',
     nome: 'To Do List'
   }
