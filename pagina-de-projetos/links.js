@@ -52,6 +52,10 @@ const links = [
     nome: 'Equação 2º Grau'
   },
   {
+    link: 'combustivel-viagem',
+    nome: 'Gasto com Combustível'
+  },
+  {
     link: 'grafico',
     nome: 'Gerando um Gráfico'
   },
