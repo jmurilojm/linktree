@@ -1,5 +1,9 @@
 const links = [
   {
+    link: 'sorteio',
+    nome: 'Sorteio Fácil'
+  },
+  {
     link: 'area-cubica',
     nome: 'Área Cúbica'
   },
@@ -114,10 +118,6 @@ const links = [
   {
     link: 'site-iejpn',
     nome: 'Site IEJPN'
-  },
-  {
-    link: 'sorteio',
-    nome: 'Sorteio Fácil'
   },
   {
     link: 'tela-colorida',
