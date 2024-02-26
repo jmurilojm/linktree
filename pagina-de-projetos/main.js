@@ -17,25 +17,26 @@ function mostrarProjetos() {
       const novoLink = document.createElement('a');
       const texto = `${links[i].nome}`;
 
-      novoLink.textContent = texto
+      novoLink.textContent = texto;
+      novoLink.setAttribute('href', `./projetos/${links[i].link}/index.html`);
       projetoDestaque.appendChild(novoLink);
     } else {
 
       const novaLinha = document.createElement('li');
-      outLista.appendChild(novaLinha)
+      outLista.appendChild(novaLinha);
 
       const novaAncora = document.createElement('a');
-      novaAncora.setAttribute('target', '_blank')
+      novaAncora.setAttribute('target', '_blank');
 
-      novaAncora.setAttribute('href', `./projetos/${links[i].link}/index.html`)
+      novaAncora.setAttribute('href', `./projetos/${links[i].link}/index.html`);
 
-      const nomeNoBotao = `${links[i].nome}`
-      novaAncora.innerText = nomeNoBotao
+      const nomeNoBotao = `${links[i].nome}`;
+      novaAncora.innerText = nomeNoBotao;
 
-      novaLinha.appendChild(novaAncora)
+      novaLinha.appendChild(novaAncora);
     }
   }
 
 }
 
-mostrarProjetos()
+mostrarProjetos();
