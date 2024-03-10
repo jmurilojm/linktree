@@ -1,5 +1,9 @@
 const links = [
   {
+    link: 'play-music',
+    nome: 'Play Music'
+  },
+  {
     link: 'sorteio',
     nome: 'Sorteio Fácil'
   },
