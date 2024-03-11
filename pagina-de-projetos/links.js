@@ -64,6 +64,10 @@ const links = [
     nome: 'Equação 2º Grau'
   },
   {
+    link: 'sequencia-fibonacci',
+    nome: 'Fibonacci'
+  },
+  {
     link: 'combustivel-viagem',
     nome: 'Gasto com Combustível'
   },
