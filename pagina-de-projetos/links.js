@@ -20,6 +20,10 @@ const links = [
     nome: 'Cadastro de Números'
   },
   {
+    link: 'calculo-fatorial',
+    nome: 'Calcular Fatorial'
+  },
+  {
     link: 'citacoes',
     nome: 'Citações'
   },
