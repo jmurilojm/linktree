@@ -35,4 +35,4 @@ inNumero.addEventListener('keypress', (e) => {
   if(e.keyCode === 13){
     outValor.innerText = fibonacci(inNumero.value);
   }
-})
+});
