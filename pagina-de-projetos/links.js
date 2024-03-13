@@ -104,6 +104,10 @@ const links = [
     nome: 'Localizar CEP'
   },
   {
+    link: 'mmc-mdc',
+    nome: 'MMC e MDC'
+  },
+  {
     link: 'mudar-cor-da-tela',
     nome: 'Mudar Cor da Tela'
   },
