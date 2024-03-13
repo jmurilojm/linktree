@@ -27,10 +27,16 @@ body {
   border-radius: 20px;
   padding: 20px;
 }
-
 hr{
   margin-bottom: 20px;
 }
+footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+
 .app input{
   text-align: center;
   outline: none;
@@ -40,6 +46,14 @@ hr{
 .outDenominadores{
   width: 100%;
 }
+.inNumero{
+  width: 80px;
+}
+.obs{
+  font-size: 10px;
+  color: gray;
+}
+
 .app button{
   margin: 40px 0;
   padding: 10px 30px;
@@ -47,20 +61,9 @@ hr{
   border: none;
   color: white;
 }
-
 .btAdicionar{
   background: dodgerblue;
 }
 .btLimpar{
   background: red;
-}
-small{
-  font-size: 10px;
-  color: gray;
-}
-
-footer a{
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
 }
