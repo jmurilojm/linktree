@@ -120,6 +120,10 @@ const links = [
     nome: 'Pixels'
   },
   {
+    link: 'pagina-projeto-curso-ds',
+    nome: 'Proj.Curso - DS'
+  },
+  {
     link: 'relogio',
     nome: 'Relógio'
   },
