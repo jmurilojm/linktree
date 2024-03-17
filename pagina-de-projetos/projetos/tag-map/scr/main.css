@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url("variaveis.css");
+
+
+figure{
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid var(--principal);
+    /*position: relative;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 335.500px;
+    height: 332.984px;
+}
+
+h2{
+    text-align: center;
+    background-color: var(--principal);
+    color: var(--secundaria);
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+
+iframe{
+    width: 100%;
+    height: 50vh;
+}
+
+@media screen and (min-width: 1200px){
+    main{
+        display: flex;
+    }
+    figure{
+        width: 30%;
+        margin: 0;
+    }
+    .tela{
+        width: 70%;
+    }
+    iframe{
+        height: 95vh;
+    }
+}
+
+/*
+.circulo{
+    width: 50px; /* metade é o raio*/
+    /*
+    height: 50px;
+    border: 1px solid red;
+    position: absolute;
+    border-radius: 50px;
+    left: 150px;
+    top: 60px; /* coordenada = esse valor mais raio*/
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ponto{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+}*/

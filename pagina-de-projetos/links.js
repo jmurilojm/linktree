@@ -104,6 +104,10 @@ const links = [
     nome: 'Localizar CEP'
   },
   {
+    link: 'tag-map',
+    nome: 'Mapeamento'
+  },
+  {
     link: 'mmc-mdc',
     nome: 'MMC e MDC'
   },
