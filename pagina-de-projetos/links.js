@@ -174,5 +174,9 @@ const links = [
   {
     link: 'to-do-list',
     nome: 'To Do List'
+  },
+  {
+    link: 'atividade-competencia-04',
+    nome: 'Utilizando Iframe'
   }
 ]
