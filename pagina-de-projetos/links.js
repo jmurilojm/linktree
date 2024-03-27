@@ -128,6 +128,10 @@ const links = [
     nome: 'Proj.Curso - DS'
   },
   {
+    link: 'propriedades-css',
+    nome: 'Propriedades CSS3'
+  },
+  {
     link: 'relogio',
     nome: 'Relógio'
   },
