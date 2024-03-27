@@ -180,6 +180,10 @@ const links = [
     nome: 'To Do List'
   },
   {
+    link: 'transform-animation',
+    nome: 'Transform e Animation'
+  },
+  {
     link: 'atividade-competencia-04',
     nome: 'Utilizando Iframe'
   }

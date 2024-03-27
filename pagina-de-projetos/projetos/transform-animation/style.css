@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+h1{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+.quadrado {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  display: inline-flex;
+  color: #fff;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.pri {
+  background: blue;
+}
+
+.seg {
+  background: red;
+}
+
+.ter {
+  background: orange;
+}
+
+.qua {
+  background: green;
+  margin-left: 60px;
+}
+
+
+
+.t {
+  transform: translate(3px, 30px);
+}
+
+.r {
+  transform: rotate(15deg);
+}
+
+.s {
+  transform: scale(1.5)
+}
+
+.k {
+  transform: skew(30deg)
+}
+
+.ta {
+  animation: taAnime 2s infinite;
+}
+
+.ra {
+  animation: raAnime 2s infinite;
+}
+
+.sa {
+  animation: saAnime 2s infinite;
+}
+
+.ka {
+  animation: kaAnime 2s infinite;
+}
+
+
+
+@keyframes taAnime {
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(30px, 30px);
+  }
+}
+
+@keyframes raAnime {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes saAnime {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes kaAnime {
+  from {
+    transform: skew(0);
+  }
+
+  to {
+    transform: skew(30deg);
+  }
+}

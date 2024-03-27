@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Transform X Animation</h1>
+  <hr>
+
+  <h2>Translate(Xpx,Ypx)</h2>
+  <div class="quadrado pri">1</div>
+  <div class="quadrado t seg">2</div>
+  <div class="quadrado qua">1</div>
+  <div class="quadrado ta ter">2</div>
+
+  <h2>Rotate(_deg)</h2>
+  <div class="quadrado pri"></div>
+  <div class="quadrado r seg"></div>
+  <div class="quadrado qua"></div>
+  <div class="quadrado ra ter"></div>
+
+  <h2>Scale(0.0)</h2>
+  <div class="quadrado pri"></div>
+  <div class="quadrado s seg"></div>
+  <div class="quadrado qua"></div>
+  <div class="quadrado sa ter"></div>
+
+  <h2>Skew(_deg)</h2>
+  <div class="quadrado pri"></div>
+  <div class="quadrado k seg"></div>
+  <div class="quadrado qua"></div>
+  <div class="quadrado ka ter"></div>
+
+  <hr>
+  <h3>Como tudo isso é aplicado?</h3>
+  <cite>Por: José Murilo</cite>
+
+  <p>Para fazer a ilustração do uso
+    das propriedades TRANSFORM e ANIMATION,
+    utilizei quadrados na posição inicial e
+    numerado com o valor "1", já o que está
+    numerado com o valor "2", representa o
+    que está com as propriedades aplicadas.
+
+  <p>O azul e o vermelho estão interagindo
+    com a propriedade TRANSFORM.</p>
+
+  <p>O verde e o laranja estão interagindo
+    com a propriedade ANIMATION.</p>
+
+  <p>Obs:</p>
+
+  <p>A propriedade TRANSFORM está sendo
+    usada nas primeiras demonstrações(azul e vermelho),
+    sendo aplicada diretamente nas classes.</p>
+
+  <p>Já na demonstrações seguintes (verde e laranja)
+    está sendo aplicada a propriedade ANIMATION
+    que recebe um @keyframes. Nesse @ estão
+    definidos o ponto de partida e o ponto final
+    das mudanças para o elemento. <br>
+    Após construido os padrões no @, utiliza-se
+    a propriedade diretamente na classe que
+    referencia o elemento. A propriedade deve
+    receber o nome definido para @keyframes,
+    o tempo de execução e de que forma essa
+    animação irá acontecer.</p>
+
+  <p>Essa forma de aplicação do ANIMATION fica
+    fácil para realizar alterações futuras.</p>
+
+</body>
+
+</html>
