@@ -1,8 +1,5 @@
 const links = [
-  {
-    link: 'play-music',
-    nome: 'Play Music'
-  },
+  
   {
     link: 'sorteio',
     nome: 'Sorteio Fácil'
@@ -138,6 +135,10 @@ const links = [
   {
     link: 'pixels',
     nome: 'Pixels'
+  },
+  {
+    link: 'play-music',
+    nome: 'Play Music'
   },
   {
     link: 'pagina-projeto-curso-ds',
