@@ -40,6 +40,10 @@ const links = [
     nome: 'Consumo Elétrico'
   },
   {
+    link: 'conversor-de-moedas',
+    nome: 'Conversor Real/Dolar'
+  },
+  {
     link: 'conversor-monetario',
     nome: 'Conversor Monetário'
   },
