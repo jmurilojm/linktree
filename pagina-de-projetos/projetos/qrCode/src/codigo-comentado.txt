@@ -1,0 +1,114 @@
+// SITE DA API: https://goqr.me/api/;
+document.getElementById('btnGerar').addEventListener('click', gerarQrcode);
+
+// VERIFICANDO A CONEXÃO COM A REDE ASSIM QUE ENTRAR NA PÁGINA;
+if (!navigator.onLine) {
+  alert('Verifique sua conexão!');
+} else {
+  // RETIRA O ATRIBUTO  O ATRIBUTO 'disabled' DO INPUT DE TEXTO, SE TIVER CONEXÃO DISPONÍVEL;
+  const campoTexto = document.getElementById('inTexto');
+  campoTexto.removeAttribute('disabled');
+  campoTexto.style.background = 'transparent';
+}
+
+// O async COM await, try E catch, PARA FAZER A REQUISIÇÃO. O try VERIFICA A CONEXÃO E catch LANÇA MENSAGEM DE ERRO;
+async function gerarQrcode() {
+  const campoImagem = document.getElementById('imgQrcode');
+  const campoTexto = document.getElementById('inTexto');
+
+  // VALIDANDO O CAMPO QUE RECEBE O TEXTO;
+  if ((campoTexto.value).trim().length < 1) {
+    alert('Por favor, digite algo!');
+    return;
+  }
+
+  const apiQrcode = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${campoTexto.value}`;
+
+  // VERIFICANDO SE EXISTE CONEXÃO COM A API. SE APRESENTAR ERRO, PASSA PARA O catch;
+  try {
+    // MAIS UMA VEZ FAZENDO A VERIFICAÇÃO DE REDE ATIVA PARA QUE POSSA DAR CONTINUIDADE;
+    if (!navigator.onLine) {
+      campoTexto.value = '';
+      alert('Verifique sua conexão!');
+      return;
+    }
+
+    // VARIÁVEL QUE GUARDA O PEDIDO DE REQUISIÇÃO FEITA A API;
+    const respostaURL = await fetch(apiQrcode);
+
+    // CONDICIONAL VERIFICANDO A API;
+    if (!respostaURL.ok) {
+      // SE A API ESTIVER INVÁLIDA ( PARECE NÃO FUNCIONAR. ESTÁ INDO DIRETO PARA O catch );
+      throw new Error('Erro de conexão com a API');
+    }
+
+    // EXECUTARÁ O CÓDIGO NORMALMENTE DEPOIS DA VERIFICAÇÃO ACIMA;
+    // REMOVER A IMAGEM DE LOAD E SUBSTITUIR PELA IMAGEM GERADA;
+    campoImagem.classList.remove('imgLoad');
+    campoImagem.src = apiQrcode;
+
+    // PEGAR O BOTÃO DE DOWNLOAD E DEIXÁ-LO VISÍVEL;
+    const btnDownload = document.getElementById('linkDownload');
+    btnDownload.style.display = 'block';
+
+    // ALTERANDO O TAMANHO DA IMAGEM
+    // CÓDIGO QUE IRÁ REALIZAR MUDANÇAS NA URL GERADA PELA API PARA POSSIBILITAR O DOWNLOAD DA IMAGEM GERADA;
+    fetch(apiQrcode.replace('150x150', '300x300'))
+      .then(resposta => resposta.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        btnDownload.href = url
+        btnDownload.download = 'qr-code.png'; // NOME E A EXTENSÃO CONFORME NECESSÁRIO;
+      })
+      .catch(() => alert('Falha ao baixar a imagem.'));
+
+    // LIMPAR CAMPOS;
+    campoTexto.value = '';
+  }
+
+  // CASO APRESENTE ERRO NA REQUISIÇÃO DA API;
+  catch (erro) {
+    console.log('Erro na conexão com a API (' + erro + ').');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// AQUI ESTÁ A BASE INICIAL DA LÓGICA DO PROGRAMA
+
+// // SITE DA API: https://goqr.me/api/
+// document.getElementById('btnGerar').addEventListener('click', gerarQrcode);
+
+// function gerarQrcode() {
+//   const campoImagem = document.getElementById('imgQrcode');
+//   const campoTexto = document.getElementById('inTexto');
+//   const apiQrcode = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${campoTexto.value}`;
+
+//   // REMOVER A IMAGEM DE LOAD E NO LUGAR ATRIBUI A NOVA IMAGEM;
+//   campoImagem.classList.remove('imgLoad');
+//   campoImagem.src = apiQrcode;
+
+//   // PEGAR O BOTAO DE DOWNLOAD E DEIXA-LO VISÍVEL;
+//   const btnDownload = document.getElementById('linkDownload');
+//   btnDownload.style.display = 'block';
+//   // ALTERANDO O TAMANHO DA IMAGEM;
+//   btnDownload.href = apiQrcode.replace('150x150', '300x300');
+
+
+//   // LIMPAR CAMPOS
+//   campoTexto.value = '';
+// }
