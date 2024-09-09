@@ -140,6 +140,10 @@ const links = [
     nome: 'Propriedades CSS3'
   },
   {
+    link: 'quiz',
+    nome: 'Quiz'
+  },
+  {
     link: 'relogio',
     nome: 'Relógio'
   },
