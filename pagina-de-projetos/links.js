@@ -52,6 +52,10 @@ const links = [
     nome: 'Cores com Intevalos'
   },
   {
+    link: 'cotacao-de-moeda',
+    nome: 'Cotação Monetária'
+  },
+  {
     link: 'criptografar',
     nome: 'Criptografar'
   },
