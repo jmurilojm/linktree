@@ -84,6 +84,10 @@ const links = [
     nome: 'Gerando um PDF'
   },
   {
+    link: 'qrCode',
+    nome: 'Gerndo QR-Code'
+  },
+  {
     link: 'hora-do-dia',
     nome: 'Hora do Dia'
   },
