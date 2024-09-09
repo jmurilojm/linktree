@@ -44,6 +44,10 @@ const links = [
     nome: 'Conversor Monetário'
   },
   {
+    link: 'cor-da-tela',
+    nome: 'Cor da Tela'
+  },
+  {
     link: 'cor-hexadecimal',
     nome: 'Cor Hexadecimal'
   },
