@@ -90,7 +90,7 @@ const links = [
   },
   {
     link: 'qrCode',
-    nome: 'Gerndo QR-Code'
+    nome: 'Gerando QR-Code'
   },
   {
     link: 'hora-do-dia',
