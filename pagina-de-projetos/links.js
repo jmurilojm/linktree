@@ -5,6 +5,10 @@ const links = [
     nome: 'Sorteio Fácil'
   },
   {
+    link: 'meu-boletim',
+    nome: 'Meu Boletim
+  },
+  {
     link: 'area-cubica',
     nome: 'Área Cúbica'
   },
