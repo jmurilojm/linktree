@@ -6,7 +6,7 @@ const links = [
   },
   {
     link: 'meu-boletim',
-    nome: 'Meu Boletim
+    nome: 'Meu Boletim'
   },
   {
     link: 'area-cubica',
