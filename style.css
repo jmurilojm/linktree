@@ -115,6 +115,16 @@
   text-decoration: none;
 }
 
+.contato{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.contato i{
+  color: var(--cor-um);
+  font-size: 30px;
+}
+
 @media screen and (max-width: 768px) {
 
   .info,
