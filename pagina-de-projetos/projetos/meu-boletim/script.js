@@ -2,6 +2,9 @@ const unidade1 = document.querySelector('#inUnidade1');
 const unidade2 = document.querySelector('#inUnidade2');
 const unidade3 = document.querySelector('#inUnidade3');
 const unidade4 = document.querySelector('#inUnidade4');
+const botaoCalcular = document.querySelector('#btn-Calcular');
+const resultado = document.querySelector('.resultado');
+
 
 function calcular() {
   let u1, u2, u3, u4;
@@ -49,7 +52,7 @@ function calcular() {
 
   // CONDICIONAIS;
   // Verificando se um dos valores é negativo;
-  if(unidade1.value < 0){
+  if (unidade1.value < 0) {
     alert('Verifique os valores informados!\n\nSão permitidas notas de 0 a 10.0');
     unidade1.focus();
     return;
@@ -64,13 +67,13 @@ function calcular() {
     unidade3.focus();
     return;
   }
-  
+
   // Verificar se deixou de informar todas as notas;
   if (mediasUndefined === 4) {
     alert('Informe pelo menos um dos Bimestres!');
     return;
   }
-  
+
   // Verificando se a soma fos valores ultrapassa o max. de 30 pontos e qual das notas foi informada acima de 10.0;
   if (somaDasMedias > 30) {
     alert('Verifique os valores informados!\n\nSão permitidas notas de 0 a 10.0');
@@ -83,17 +86,29 @@ function calcular() {
     }
     return;
   }
-  
-  // Verifica se a soma é igual ou superior a nota geral. Critério para ser aprovado;
+
+  // Verifica se a soma é igual ou superior a 280 pontos. Critério para ser aprovado;
   if (somaDasMedias >= 28) {
-    unidade4.value = 0;
-    
+    resultado.innerHTML = '<p><strong>PARABÉNS!</strong><br><br><br>Você está <strong style="color: green">APROVADO!</strong> nesta Disciplina.</p>';
+
     // Os campos ficam desabilitados após o resultado;
     unidade1.setAttribute('disabled', 'disabled');
     unidade2.setAttribute('disabled', 'disabled');
     unidade3.setAttribute('disabled', 'disabled');
     return;
   }
+
+  // Verifica se a soma é menor que oito. Critério para ser reprovado;
+  if (somaDasMedias < 8) {
+    resultado.innerHTML = '<p>Infelizmente você está <strong style="color: red">REPROVADO!</strong> nesta Disciplina e precisará <strong>repetir o ano</strong>.</p>';
+
+    // Os campos ficam desabilitados após o resultado;
+    unidade1.setAttribute('disabled', 'disabled');
+    unidade2.setAttribute('disabled', 'disabled');
+    unidade3.setAttribute('disabled', 'disabled');
+    return;
+  }
+
 
 
   let pontosACompletar = PONTOS - somaDasMedias;
@@ -114,7 +129,15 @@ function calcular() {
   }
   if (u4 === undefined) {
     unidade4.value = paraAprovacao.toFixed(1);
-    unidade4.style.color = unidade4.value > 10 ? 'red' : 'green';
+
+    // Se a nota for maior que 10, o bimestre 4 imprime 10 e na div resultado é dada uma informação;
+    if (unidade4.value > 10) {
+      resultado.innerHTML = `<p>Você está na <strong style="color: red">FINAL!</strong> desta Displina.<br><br><br>Com base nas Médias Bimestrais informadas, você está precisando de no <strong style="color: red">mínimo ${(unidade4.value - 10).toFixed(1)} pontos para ser Aprovado</strong>.</p>`;
+      unidade4.value = 10;
+    } else {
+      unidade4.style.color = 'green';
+      resultado.innerHTML = '<p>Parabéns pelo seu desempenho!<br><br><br>Conquiste a(s) média(s) na <strong style="color: green">cor VERDE</strong> para ser <strong>APROVADO</strong> nesta Disciplina.</p>';
+    }
   }
 
 
@@ -122,6 +145,7 @@ function calcular() {
   unidade1.setAttribute('disabled', 'disabled');
   unidade2.setAttribute('disabled', 'disabled');
   unidade3.setAttribute('disabled', 'disabled');
+  botaoCalcular.setAttribute('disabled', 'disabled');
 }
 
 
@@ -130,6 +154,7 @@ function limpar() {
   unidade2.value = '';
   unidade3.value = '';
   unidade4.value = '';
+  resultado.innerHTML = '<p><strong>...</strong></p>';
 
   unidade2.style.color = 'black';
   unidade3.style.color = 'black';
@@ -138,4 +163,5 @@ function limpar() {
   unidade1.removeAttribute('disabled');
   unidade2.removeAttribute('disabled');
   unidade3.removeAttribute('disabled');
+  botaoCalcular.removeAttribute('disabled');
 }
