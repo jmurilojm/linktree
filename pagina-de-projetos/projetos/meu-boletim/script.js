@@ -132,7 +132,7 @@ function calcular() {
 
     // Se a nota for maior que 10, o bimestre 4 imprime 10 e na div resultado é dada uma informação;
     if (unidade4.value > 10) {
-      resultado.innerHTML = `<p>Você está na <strong style="color: red">FINAL</strong> desta Displina.<br><br><br>Com base nas Médias Bimestrais informadas, você está precisando de no <strong style="color: red">mínimo ${(unidade4.value - 10).toFixed(1)} pontos para ser Aprovado</strong>.</p>`;
+      resultado.innerHTML = `<p>Você está na <strong style="color: red">FINAL</strong> desta Displina.<br><br><br>Observações:<br><br>- <strong>Você precisa da Média = 10.0 no IV Bimestre</strong> e <br>- Você precisa conquistar, na <strong>FINAL</strong>, no <strong style="color: red">mínimo ${(unidade4.value - 10).toFixed(1)} pontos para ser Aprovado</strong> nesta Disciplina.</p>`;
       unidade4.value = 10;
     } else {
       unidade4.style.color = 'green';
