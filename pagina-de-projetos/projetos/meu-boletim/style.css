@@ -14,7 +14,7 @@ body {
   height: 100vh;
 }
 
-.container {
+.container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,14 +22,14 @@ body {
   width: 90%;
 }
 
-.container-prog {
+.container-prog{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-img {
+img{
   display: none;
   width: 30%;
 }
@@ -47,7 +47,7 @@ button {
   width: 100%;
 }
 
-.botoes,
+.botoes, .obs,
 footer {
   margin-top: 30px;
 }
@@ -62,12 +62,10 @@ h2 {
   margin: 20px 0;
 }
 
-h3,
-p {
+h3{
   margin-bottom: 20px;
 }
-
-p {
+p{
   text-align: justify;
   color: gray;
   font-size: 14px;
@@ -84,11 +82,10 @@ input {
   padding: 5px 0;
   text-align: center;
   width: 45%;
-  font-weight: bolder;
 }
 
-.negrito {
-  font-size: 18px;
+.negrito{
+  font-weight: bold;
 }
 
 button {
@@ -97,6 +94,13 @@ button {
   border: none;
   color: white;
   width: 45%;
+}
+span{
+  color: red;
+}
+
+footer{
+  margin-top: 10px;
 }
 
 footer a {
@@ -111,26 +115,14 @@ footer a {
   background-color: lightcoral;
 }
 
-.resultado {
-  margin-top: 30px;
-}
-
-.resultado p {
-  text-align: center;
-  width: 100%;
-  color: black;
-}
-
 @media screen and (min-width: 720px) {
-  main {
+  main{
     width: 500px;
   }
-
-  img {
+  img{
     display: block;
   }
-
-  .container {
+  .container{
     flex-direction: row;
   }
 }
