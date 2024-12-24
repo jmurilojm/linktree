@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url("variaveis.css");
+
+main {
+    min-height: 100vh;
+    background-image: linear-gradient(var(--terciaria), var(--principal), var(--terciaria));
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+hr {
+    width: 100%;
+}
+
+.apresentacao {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    gap: 30px;
+}
+
+.apresentacao .imagem-maior {
+    width: 500px;
+    height: 300px;
+    background-image: url("https://picsum.photos/500/300");
+    /*largura x altura*/
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+.apresentacao .imagem-maior:hover {
+    animation: zoom 1s;
+}
+
+.apresentacao .mais-imagens {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.apresentacao .mais-imagens div {
+    background-image: url("https://picsum.photos/200/150");
+    /*largura x altura*/
+    height: 150px;
+    width: 100px;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+}
+
+.apresentacao .mais-imagens div:hover {
+    width: 200px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+  main{
+    padding: 10px;
+  }
+  h1{
+    margin: 20px 0;
+  }
+  .apresentacao{
+    padding: 0;
+  }
+  .mais-imagens{
+    padding-bottom: 20px;
+  }
+  .apresentacao .imagem-maior{
+    width: 350px;
+    height: 250px;
+    animation: zoom none;
+  }
+  .apresentacao .mais-imagens{
+    flex-wrap: wrap;
+  }
+  .apresentacao .mais-imagens div{
+    width: 145px;
+    margin: 5px;
+  }
+  .apresentacao .mais-imagens div:hover{
+    transition: 0;
+    width: 145px;
+    border-radius: 30px;
+  }
+}

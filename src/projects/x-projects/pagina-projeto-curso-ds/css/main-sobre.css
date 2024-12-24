@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url("variaveis.css");
+
+main {
+    min-height: 100vh;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    background-image: linear-gradient(var(--terciaria), var(--principal), var(--terciaria));
+}
+
+.sobre h1,
+.sobre h2,
+.sobre p,
+.sobre i,
+.meios h2,
+.meios p,
+.meios i {
+    color: var(--principal);
+}
+
+.sobre h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.sobre hr {
+    margin-bottom: 30px;
+}
+
+.sobre p {
+    margin-bottom: 10px;
+}
+
+.sobre h2,
+.meios h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sobre,
+.meios {
+    border: 1px solid var(--secundaria);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    background-color: var(--secundaria);
+    text-indent: 30px;
+}
+
+.meios {
+    width: 100%;
+}
+
+.redes {
+    border: 2px solid var(--principal);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.redes i {
+    text-indent: 0;
+    padding: 5px;
+    font-size: 2.5rem !important;
+}
+
+
+@media screen and (max-width: 1200px){
+  main{
+    flex-direction: column;
+  }
+  .sobre h1, .meios h2{
+    text-indent: 0;
+  }
+  .sobre h2, .meios h2{
+    font-size: 1.5rem;
+  }
+}

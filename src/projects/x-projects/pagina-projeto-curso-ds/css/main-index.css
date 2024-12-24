@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url("variaveis.css");
+
+main {
+  min-height: 100vh;
+  background-image: url("https://picsum.photos/800/600");
+  /*Largura x Altura*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.apresentacao {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.apresentacao h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.apresentacao p {
+  font-size: 1.5rem;
+  text-align: justify;
+  text-indent: 40px;
+  font-weight: bolder;
+}
+
+.botoes {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.botoes a {
+  border: 2px solid var(--secundaria);
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: var(--terciaria);
+}
+
+.botoes a:hover {
+  background-color: var(--principal);
+}
+
+.botoes i {
+  margin-right: 10px;
+}
+
+.botoes-1:hover,
+.botoes-2:hover {
+  box-shadow: 0 0 10px var(--secundaria);
+}
+
+@media screen and (max-width: 1200px){
+  main{
+    justify-content: center;
+  }
+  .apresentacao{
+    width: 90%;
+    margin-left: 0;
+    padding: 30px 10px;
+  }
+  .apresentacao p{
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .botoes a{
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+}

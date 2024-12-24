@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url("variaveis.css");
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(var(--secundaria), var(--terciaria));
+}
+
+form {
+  width: 60%;
+  min-height: 50%;
+  background-color: var(--principal);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.entradas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entradas1 {
+  width: 50%;
+}
+
+.entradas1 input {
+  width: 100%;
+  margin-bottom: 20px;
+  color: var(--principal);
+  padding: 10px;
+}
+
+.entradas2 textarea {
+  color: var(--principal);
+  padding: 10px;
+}
+
+.btn-primary {
+  background-color: var(--secundaria);
+  color: var(--principal);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-left: 15%;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 10px var(--terciaria);
+}
+
+.pagina-ativada {
+  background-color: var(--secundaria) !important;
+}
+
+
+@media screen and (max-width: 1200px){
+  form{
+    width: 90%;
+  }
+  .entradas{
+    flex-direction: column;
+  }
+  .entradas1{
+    width: 100%;
+  }
+  textarea{
+    width: 100%;
+  }
+  .btn-primary{
+    margin: 30px 0 0 0;
+  }
+}

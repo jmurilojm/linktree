@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h4 id="playlist">Playlist de Músicas</h4>
+    <img id="capa" src="https://picsum.photos/300/300" alt="Imagens Aleatórias">
+
+    <audio id="audio" src="midia/Chorando Se Foi - Paulinha Abelha (320).mp3"></audio>
+    <div id="inf-musica">
+      <div id="inf-musica-autor">
+        <div id="nome-musica">Nome da Música</div>
+        <div id="nome-banda" class="light-color">Banda</div>
+      </div>
+      <button id="curtir" class="botao light-color"><i class="bi bi-heart"></i></div>
+    </div>
+
+    <div id="box-barras">
+      <div id="barra-progresso">
+        <div id="preenchimento"></div>
+      </div>
+      <div id="box-tempo">
+        <div id="tempo-audio">00:00:00</div>
+        <div id="tempo-total">00:00:00</div>
+      </div>
+    </div>
+
+    <div id="box-botoes">
+      <button id="aleatorio" class="botao"><i class="bi bi-shuffle"></i></button>
+      <button id="voltar" class="botao botao-navegacao"><i class="bi bi-caret-left-fill"></i></button>
+      <button id="tocar" class="botao botao-maior"><i id="icone-tocar" class="bi bi-play-circle-fill"></i></button>
+      <button id="avancar" class="botao botao-navegacao"><i class="bi bi-caret-right-fill"></i></button>
+      <button id="repetir" class="botao"><i class="bi bi-arrow-repeat"></i></button>
+    </div>
+  </main>
+
+  <!-- Project -->
+  <script src="api.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

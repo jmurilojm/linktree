@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+:root {
+  --principal: #5f9ea0;
+  /*cadetblue #5f9ea0*/
+  --secundaria: #fff;
+  /* branco*/
+  --terciaria: #4f8586;
+  /* mais escuro #4f8586*/
+}

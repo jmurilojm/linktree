@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pixels</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="titulo">
+    <h1>Pixels</h1>
+  </header>
+
+  <main class="main">
+    <section class="entradas">
+      <p>
+        PPI / DPI: <input type="number" name="resolucao" id="resolucao" value="300">
+      </p>
+      <p>
+        Base: <input type="number" name="base" id="base"> cm
+      </p>
+      <p>
+        Altura: <input type="number" name="altura" id="altura"> cm
+      </p>
+
+      <button onclick="calcular()" type="button">Calcular</button>
+    </section>
+
+    <section class="saidas">
+      <p id="resultado">Resultado</p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; JMurilo | 2023</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
