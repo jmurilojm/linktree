@@ -1,3 +1,9 @@
+document.querySelector('#inDado').addEventListener('keydown', (e) => {
+  if(e.keyCode === 13){
+    consultar()
+  }
+})
+
 function consultar(){
   let dado = document.querySelector('#inDado')
   
