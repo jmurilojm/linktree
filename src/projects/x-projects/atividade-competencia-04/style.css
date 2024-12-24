@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 20vh 75vh 5vh;
+}
+
+main {
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0 10px;
+}
+
+header,
+footer {
+    background: black;
+    background-image: linear-gradient(black, darkblue);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: 28vh;
+    background-image: url("tv.gif");
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 10px 0;
+}
+
+.item {
+    color: black;
+    font-weight: bold;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+}
+
+.item:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.vid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.item div {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+article {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+article p,
+article h2 {
+    margin: 15px 0;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 1200px) {
+    iframe {
+        width: 40%;
+        height: 48vh;
+    }
+
+    main {
+        text-align: center;
+    }
+}
