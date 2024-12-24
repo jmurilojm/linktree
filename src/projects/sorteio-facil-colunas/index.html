@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="José Murilo">
+  <title>Sorteio</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Sorteio Fácil</h1>
+    <hr>
+    
+    <div class="quadroGeral">
+      <div class="quadroNomes">
+        <div class="nomeCaixaEntrada">
+          <p>Nomes</p>
+        </div>
+        <div class="nomeCaixaSaida">
+          <p>Sorteados</p>
+        </div>
+      </div>
+      <div class="quadros">
+        <div class="quadroEntrada" id="quadroEntrada"></div>
+        <div class="quadroSaida" id="quadroSaida"></div>
+      </div>
+    </div>
+    
+    <div class="registro">
+      <input class="inNome" type="text" name="" id="inNome" placeholder="Nome">
+      <button class="btAdicionar" id="btAdicionar">Adicionar</button>
+    </div>
+    <button class="btSortear" id="btSortear">Sortear</button>
+    <br>
+    <div>
+      <button class="btNovoSorteio novoSorteioDesabilitado" id="btNovoSorteio" disabled>Novo Sorteio</button>
+      <button class="btLimpar limparDesabilitado" id="btLimpar" disabled>Limpar</button>
+    </div>
+<div class="observacao"><span>*CONTINUE CLICANDO EM "SORTEAR" PARA OBTER OS PRÓXIMOS DA VEZ.</span></div>
+  </main>
+  
+  <footer>
+    <p><a href="https://www.linkedin.com/in/jmurilo" target="_blank">&copy; Desenvolvido por José Murilo | 2024</a></p>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>

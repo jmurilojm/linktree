@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  font-size: 15pt;
+  background-color: dodgerblue;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  min-height: 600px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+
+
+
+h1{
+  color: dodgerblue;
+}
+.quadroGeral{
+  height: 60%;
+  margin: 15px auto;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.quadroNomes {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.nomeCaixaEntrada, .nomeCaixaSaida{
+  width: 45%;
+  background: dodgerblue;
+  color: white;
+  border-radius: 5px;
+}
+
+.quadros{
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.quadroEntrada, .quadroSaida{
+  width: 45%;
+  height: 100%;
+  border: 2px solid dodgerblue;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: left;
+  padding: 10px;
+}
+
+.registro{
+  margin-bottom: 10px;
+}
+.inNome{
+  width: 60%;
+  outline: none;
+  text-align: center;
+}
+.btAdicionar{
+  padding: 0 15px;
+  height: 20px;
+  background: dodgerblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btSortear, .btNovoSorteio, .btLimpar{
+  padding: 0 15px;
+  height: 30px;
+  background: dodgerblue;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.btSortear{
+  background: green !important;
+  width: 60%;
+  font-size: 1.5rem;
+}
+.btLimpar{
+  background-color: orange;
+  color: white;
+}
+.observacao{
+font-size: 0.7rem;
+color: gray;
+margin-top: 10px;
+}
+
+/* para trabalhar com js */
+.novoSorteioDesabilitado{
+  background: gray;
+  color: lightgray;
+}
+.limparDesabilitado{
+  background: gray;
+  color: lightgray;
+}
