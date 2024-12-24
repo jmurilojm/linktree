@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="José Murilo Lopes Ferreira">
+  <meta name="description" content="Programa gerador de QR-Code, utilizando API - 2024">
+  <meta name="keywords" content="QR, API">
+  <title>QrCode</title>
+
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <main>
+    <div id="containerLogo">
+      <img src="src/logo-qrcode.webp" alt="Logo QR-Code" id="logo">
+    </div>
+
+
+    <div id="app">
+      <header>
+        <h1>Gerar QR-CODE</h1>
+      </header>
+      <hr>
+
+      <input placeholder="Escreva aqui..." type="text" id="inTexto" disabled>
+      <button id="btnGerar" class="btn">Gerar</button>
+      <hr>
+
+      <div id="outQrcode">
+        <img src="src/carregando.png" alt="QrCode" id="imgQrcode" class="loading">
+      </div>
+
+      <a class="btn" id="btnDownload" href="" rel="noopener noreferrer nofollow">Download</a>
+      <!--
+    1- rel=”noopener” IMPEDE QUE ESTE RECURSO DO JAVASCRIPT SEJA UTILIZADO.
+    2- rel=”noreferrer” IMPEDE A TRANSMISSÃO DA INFORMAÇÃO referrer PARA A NOVA PÁGINA.
+    3- rel="nofollow" IMPEDE O SEU SITE DE PASSAR LINKJUICE PARA O SITE REFERENCIADO.
+    -->
+    </div>
+  </main>
+
+
+  <footer>
+    <p><a href="https://www.linkedin.com/in/jmurilo" target="_blank">&copy; Desenvolvido por José Murilo | 2024</a></p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
