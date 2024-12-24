@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="José Murilo">
+  <meta name="description" content="Calculadora de converção de centímetros para DPI/PPI">
+  <title>Pixel</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="titulo">
+    <h1>CM > PX</h1>
+    <hr>
+  </header>
+
+  <section class="section">
+    <p><label for="pontos">PPI / DPI</label></p>
+    <input type="number" name="pontos" id="pontos" value="300">
+
+    <p><label for="largura">LARGURA</label></p>
+    <input type="number" name="largura" id="largura" placeholder="largura">
+
+    <p><label for="comprimento">COMPRIMENTO</label></p>
+    <input type="number" name="comprimento" id="comprimento" placeholder="comprimento">
+    <br><br>
+
+    <button onclick="converter()" type="button">Converter</button>
+
+    <p class="resultado" id="resultado"></p>
+  </section>
+
+  <hr>
+
+  <section class="detalhes">
+    <h3>Sobre o DPI (dots per inch, pontos por polegadas) e PPI (pixels per inch)</h3>
+
+    <p><b>150 dpi/ppi</b> - É a resolução utilizada em muitos jornais, por exemplo. É uma resolução indicada para
+      documentos de texto, preferencialmente para uso interno. Não é recomendado para imagem.</p>
+
+    <p><b>300 dpi/ppi</b> - Resolução de melhor qualidade para documentos de texto. Imagens ficam com melhor
+      qualidade, porém para material publicitário (folders, cartões, apresentações) uma resolução superior é
+      melhor recomendada.</p>
+
+    <p><b>600 dpi/ppi</b> - Alta qualidade de imagem. Impressoras com essa resolução são capazes de imprimir imagens
+      com boa nitidez e cores fortes.</p>
+
+    <p><b>1200 dpi/ppi</b> - Resolução fotográfica com maior realismo de cores. Utilização por profissionais do
+      setor gráfico.</p>
+
+    <p><b>Acima de 1200 dpi/ppi</b> - Alto realismo de cor, definição e nitidez. Resolução indicadas para fotógrafos
+      profissionais.</p>
+  </section>
+
+  <footer class="rodape">
+    <p><a href="https://www.linkedin.com/in/jmurilo" target="_blank">&copy; Desenvolvido por José Murilo | 2023</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
