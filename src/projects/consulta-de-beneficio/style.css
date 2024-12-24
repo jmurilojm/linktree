@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  flex-direction: column;
+}
+h1{
+  color: white;
+}
+input{
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+button{
+  margin: auto;
+  display: block;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+}
+h6{
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+h6 a{
+  color: lightgray;
+}
+footer{
+  margin-top: 100px;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
