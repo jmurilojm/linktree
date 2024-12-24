@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/*
+&#128204; codigo icone de alfinete.
+*/
+
+:root{
+  --claro: #419ABE;
+  --escuro: darkblue;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+}
+body{
+  background-color: lightblue;
+}
+header{
+  background-image: linear-gradient(to top, var(--escuro), var(--claro)30%, white);
+  text-align: center;
+  padding-bottom: 20px;
+}
+header h6{
+  text-align: left;
+  padding: 10px;
+}
+header img{
+  width: 150px;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 90px 90px;
+  margin-bottom: 20px;
+}
+header h1{
+  text-shadow: 1px 1px 3px blue;
+  color: white;
+}
+header h2{
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 1px 1px 5px black;
+  font-size: 30px;
+}
+nav{
+  background-color: var(--escuro);
+  padding: 10px 0px;
+  text-align: center;
+  box-shadow: 0px 3px 3px gray;
+}
+nav a{
+  color: white;
+  font-size: 1em;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover{
+  text-decoration: underline;
+  border-radius: 3px;
+  background-color: var(--azul);
+  color: yellow;
+  padding: 1px;
+  margin: 9px;
+}
+nav a::active{
+  color: yellow;
+}
+main{
+  padding: 20px;
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  text-indent: 30px;
+  box-shadow: 0px 5px 7px black;
+  min-height: 1000px;
+}
+main h2{
+  margin: 15px 0px;
+}
+main p{
+  text-align: justify;
+  line-height: 1.5em;
+}
+main div.area-video{
+  background-color: var(--escuro);
+  margin: 0px -20px;
+  text-align: center;
+}
+main video{
+  width: 100%;
+  max-width: 90%;
+  margin: 10px 0px 5px -30px;
+}
+footer{
+  background-color: var(--escuro);
+  padding: 10px;
+}
+footer ul{
+  columns: 3;
+  text-align: center;
+  margin: 10px 10px 15px 10px;
+}
+footer li{
+  list-style-type: none;
+  font-size: 1em;
+  padding: 5px 0px;
+}
+footer p{
+  font-size: 14px;
+  text-align-last: center;
+  color: white;
+  text-align: center;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer img{
+  width: 14px;
+  margin-right: 5px;
+}
+footer p#desenvolvedor{
+  color: white;
+  font-size: 10px;
+}
+.gps{
+  width: 15px;
+  margin-right: 5px;
+}
