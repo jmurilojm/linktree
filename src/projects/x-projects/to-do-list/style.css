@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+    font-size: 15pt;
+    height: 100vh;
+}
+main{
+  background-color: white;
+  border: 2px solid gray;
+  width: 90%;
+  min-height: 100px;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.titulo{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.box-entrada{
+  margin: 20px auto;
+  text-align: center;
+}
+.inTexto{
+  padding: 5px;
+  outline: none;
+}
+.btAdicionar{
+  background-color: royalblue;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.outTarefas .tarefa{
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.outTarefas .tarefa p{
+  width: 70%;
+}
+
+
+/* para uso no js */
+.corVerde{
+  color: green;
+}
+.corVermelho{
+  color: red;
+}
+.textoMarcado{
+  text-decoration: line-through;
+  color: black;
+  background-color: darkgray !important;
+}

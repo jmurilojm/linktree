@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Monospace;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img,
+.pesquisa {
+  width: 300px;
+}
+
+.pesquisa {
+  margin: 10px 0;
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.formulario {
+  text-align: center;
+}
+
+.botao,
+.pesquisa {
+  padding: 0 5px;
+}
+
+.por p {
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.por a {
+  color: gray;
+  text-decoration: none;
+}

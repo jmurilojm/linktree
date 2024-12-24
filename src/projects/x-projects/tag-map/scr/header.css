@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url("variaveis.css");
+
+header{
+    background-color: var(--principal);
+    text-align: center;
+    color: var(--secundaria);
+    padding: 10px;
+}
+header h1{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+header p{
+    font-size: 1rem;
+}
+.bg-sec{
+    background-color: var(--secundaria);
+    color: var(--principal);
+    padding: 5px 0;
+}
