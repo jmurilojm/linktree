@@ -1,0 +1,23 @@
+.titulo,
+.rodape {
+  text-align: center;
+}
+
+.main {
+  width: 300px;
+  border-radius: 10px;
+  margin: auto;
+  border: 2px solid dodgerblue;
+  padding: 10px;
+}
+.centro{
+  text-align: center;
+}
+input{
+  width: 60px;
+  height: 30px;
+  text-align: right;
+}
+.botao{
+  margin-top: 40px;
+}
