@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+
+body {
+  font-size: 15pt;
+  height: 100vh;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCj461AmICJWVVvMuB0139ZxLSTQnPth5oYQkyn8knUClGJqEb5PRy59JO&s=10") no-repeat center center / cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+main {
+  background-color: black;
+  color: white;
+  width: 85%;
+  max-width: 600px;
+  min-height: 100px;
+  border-radius: 20px;
+  border: 3px solid white;
+  padding: 50px 0;
+  margin-top: -40px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.titulo {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+.box-citacao {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.outCitacao {
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 1.5;
+}
+
+.btGerar {
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  user-select: none;
+}
