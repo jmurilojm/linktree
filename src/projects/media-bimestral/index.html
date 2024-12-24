@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Programa para previsão de nota mínima escolar, para aprovação.">
+  <meta name="author" content="Jose Murilo Lopes Ferreira">
+  <title>MEU BOLETIM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="midia/boletim.png" alt="">
+
+
+    <div class="container-prog">
+      <main>
+        <h1>BOLETIM</h1>
+        <hr>
+        <h2>Média Bimestral</h2>
+        <h3> De quanto Preciso?</h3>
+        <p>Informe suas Médias Bimestrais:</p>
+
+        <div>
+          <label for="">I Bimestre:</label>
+          <input type="number" name="" id="inUnidade1">
+        </div>
+        <div>
+          <label for="">II Bimestre:</label>
+          <input type="number" name="" id="inUnidade2">
+        </div>
+        <div>
+          <label for="">III Bimestre:</label>
+          <input type="number" name="" id="inUnidade3">
+        </div>
+        <div>
+          <label for="">IV Bimestre:</label>
+          <input class="negrito" disabled type="number" name="" id="inUnidade4">
+        </div>
+
+        <div class="botoes">
+          <button onclick="calcular()">Calcular</button>
+          <button class="btn-limpar" onclick="limpar()">Limpar</button>
+        </div>
+
+        <div class="obs">
+          <p>*OBS: Para a realização dos cálculos realizados, consideramos a <strong>Média Bimestral</strong> igual <strong>7.0</strong> e <strong>Final</strong> igual a <strong>5.0</strong> <br><br> Se a nota apresentada estiver na cor <strong><span>VERMELHO</span></strong>, significa que você está
+            na final precisando dela. Se <strong><span>Maior que 20.0</span></strong>, infelizmente você
+            está automaticamente <strong><span>REPROVADO</span></strong>.</p>
+        </div>
+      </main>
+
+      <footer>
+        <a target="_blank" href="https://www.linkedin.com/in/jmurilo">&copy; Desenvolvido por José Murilo | 2024</a>
+      </footer>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
