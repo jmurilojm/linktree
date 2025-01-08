@@ -44,6 +44,9 @@ function realizarSorteio() {
   if (confirmacao) {
     let sorteado = Math.floor(Math.random() * quantidade)
     let nomeSorteado = nomes.children[sorteado].textContent
+    
+    // estilizando o sorteado
+    nomes.children[sorteado].style.backgroundColor = 'coral'
 
     let nomeGanhador = document.querySelector('#nomeGanhador')
     nomeGanhador.textContent = nomeSorteado
