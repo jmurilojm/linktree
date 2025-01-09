@@ -3,7 +3,7 @@ const outLista = document.querySelector('#outLista')
 const btnRealizarSorteio = document.querySelector('#btnRealizarSorteio')
 const btnAdicionarNome = document.querySelector('#btnAdicionarNome')
 const btnReiniciar = document.querySelector('#btnReiniciar')
-const nomeGanhador = document.querySelector('#nomeGanhador')
+const ganhador = document.querySelector('#ganhador')
 
 let listaDeNomes = []
 inNome.focus()
@@ -18,7 +18,7 @@ inNome.addEventListener('keydown', (e) => {
 
 function addNomeNaLista(){
   // verificar se há dígito válido antes de adicionar
-  if(inNome.value.trim() === '' || inNome.value.length < 2){
+  if(inNome.value.trim() === '' || inNome.value.trim().length < 2){
     alert('Valor inválido!')
     return
   }
@@ -36,9 +36,9 @@ function addNomeNaLista(){
 
 function imprimirLista(){
   // iterar nomes da lista
-  listaDeNomes.forEach(n => {
+  listaDeNomes.forEach(nome => {
     // lançar cada nome com a tag <li>
-    outLista.innerHTML += `<li>${n}</li>`
+    outLista.innerHTML += `<li>${nome}</li>`
   })
 }
 
@@ -50,18 +50,18 @@ function sortearNome(){
   }
   
   // pegar total de nomes salvos
-  let quantidade = listaDeNomes.length
+  let quantidadeDeNomes = listaDeNomes.length
   // sorteio de uma posição aleatória
-  let sorteado = Math.floor(Math.random() * quantidade)
+  let numeroAleatorio = Math.floor(Math.random() * quantidadeDeNomes)
   // o ganhador é quem esta na posição aleatória 
-  let ganhador = listaDeNomes[sorteado]
+  let nomeDoGanhador = listaDeNomes[numeroAleatorio]
   
   // exibir ganhador na tela
-  nomeGanhador.innerHTML = `${ganhador}`
+  ganhador.innerHTML = `${nomeDoGanhador}`
   // remover o sorteado das listas e atualizar
-  const liSorteado = outLista.children[sorteado]
-  outLista.removeChild(liSorteado)
-  listaDeNomes.splice(sorteado,1)
+  const liSorteada = outLista.children[numeroAleatorio]
+  outLista.removeChild(liSorteada)
+  listaDeNomes.splice(numeroAleatorio,1)
 }
 
 function reiniciar() {
