@@ -58,6 +58,10 @@ li{
   display: inline-block;
   text-align: center;
 }
+.nota{
+  padding: 0 10px;
+  font-size: 12px;
+}
 footer{
   margin-top: 10px 0;
   text-align: center;
