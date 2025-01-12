@@ -82,7 +82,7 @@ function reiniciar() {
   let confirmacao = confirm('Atenção!\n\nTodos os dados serão apagados.');
 
   if (confirmacao) {
-    window.location.reload();
+    window.location.reload();// true: reinicia a pagina ignorando o cache
     return;
   }
 }
