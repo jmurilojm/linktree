@@ -77,16 +77,6 @@ function sortearNome(){
   outHora.textContent = inforHora();
 }
 
-function reiniciar() {
-  // apos confirmacao, atualizar a pagina para um novo sorteio
-  let confirmacao = confirm('Atenção!\n\nTodos os dados serão apagados.');
-
-  if (confirmacao) {
-    window.location.reload();// true: reinicia a pagina ignorando o cache
-    return;
-  }
-}
-
 function inforData(){
   const data = new Date();
   const dia = acrescentarZero(data.getDate());
@@ -106,4 +96,21 @@ function inforHora() {
 function acrescentarZero(elemento){
   let formatado = elemento < 10 ? `0${elemento}` : elemento;
   return formatado;
+}
+
+function reiniciar() {
+  let confirmacao = confirm('Atenção!\n\nTodos os dados serão apagados.');
+  
+  // apos confirmacao, atualizar a pagina para um novo sorteio
+  if (confirmacao) {
+    listaDeNomes = [];
+    sorteios = 0;
+    outLista.innerHTML = '';
+    ganhador.innerHTML = '';
+    numeroDoSorteio.textContent = sorteios;
+    inNome.value = '';
+    inNome.focus();
+    outData.textContent = inforData();
+    outHora.textContent = inforHora();
+  }
 }
