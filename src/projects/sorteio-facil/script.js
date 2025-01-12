@@ -83,6 +83,7 @@ function reiniciar() {
 
   if (confirmacao) {
     window.location.reload();
+    return;
   }
 }
 
