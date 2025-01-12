@@ -55,8 +55,11 @@ button{
 .outrosBotoes{
   text-align: center;
 }
-.numeroDoSorteio{
+.infor{
   color: coral;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
 }
 ul{
   list-style-type: none;
