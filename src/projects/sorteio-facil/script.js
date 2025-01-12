@@ -57,7 +57,7 @@ function sortearNome(){
   let nomeDoGanhador = listaDeNomes[numeroAleatorio]
   
   // exibir ganhador na tela
-  ganhador.innerHTML = `${nomeDoGanhador}`
+  ganhador.innerHTML = `Parabéns ${nomeDoGanhador}!`
   // remover o sorteado das listas e atualizar
   const liSorteada = outLista.children[numeroAleatorio]
   outLista.removeChild(liSorteada)

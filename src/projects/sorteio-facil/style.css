@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body{
-  background: lightgray;
+  background: dodgerblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,21 +23,34 @@ h1, h2{
   margin: 10px 0;
 }
 h2{
-  color: seagreen;
+  color: dodgerblue;
 }
 input{
   width: 60%;
-  padding: 5px;
+  padding: 10px 5px;
   text-align: center;
   margin: 20px 0;
+  border: none;
+  background: lightgray;
 }
 button{
-  padding: 5px;
+  padding: 10px 5px;
   width: 45%;
+  border: none;
 }
 .btnAdicionarNome{
   width: 30%;
   margin: 10px 0;
+  background: dodgerblue;
+  color: white;
+}
+.btnSortear{
+  background: seagreen;
+  color: white;
+}
+.btnReiniciar{
+  background: indianred;
+  color: white;
 }
 .outrosBotoes{
   text-align: center;
@@ -47,7 +60,8 @@ ul{
   margin-bottom: 20px;
   height: 200px;
   overflow-y: scroll;
-  border: 1px solid lightgray;
+  border: 2px solid lightgray;
+  border-radius: 10px;
 }
 li{
   background: seagreen;
@@ -57,6 +71,7 @@ li{
   width: 30%;
   display: inline-block;
   text-align: center;
+  border-radius: 5px;
 }
 .nota{
   padding: 0 10px;
