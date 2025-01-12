@@ -7,6 +7,7 @@ const ganhador = document.querySelector('#ganhador')
 
 let listaDeNomes = []
 inNome.focus()
+let sorteios = 0
 
 // usar tecla enter para inserção 
 inNome.addEventListener('keydown', (e) => {
@@ -62,6 +63,10 @@ function sortearNome(){
   const liSorteada = outLista.children[numeroAleatorio]
   outLista.removeChild(liSorteada)
   listaDeNomes.splice(numeroAleatorio,1)
+  
+  // contagem de sorteio
+  sorteios++
+  numeroDoSorteio.textContent = sorteios
 }
 
 function reiniciar() {

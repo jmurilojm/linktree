@@ -55,6 +55,9 @@ button{
 .outrosBotoes{
   text-align: center;
 }
+.numeroDoSorteio{
+  color: coral;
+}
 ul{
   list-style-type: none;
   margin-bottom: 20px;
