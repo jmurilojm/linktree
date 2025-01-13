@@ -1,10 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
   background: dodgerblue;
   display: flex;
   flex-direction: column;
@@ -12,20 +13,26 @@ body{
   align-items: center;
   height: 100vh;
 }
-main{
+
+main {
   background: white;
   width: 350px;
   border-radius: 20px;
   padding: 10px;
 }
-h1, h2{
+
+h1,
+h2 {
   text-align: center;
   margin: 10px 0;
 }
-h2{
+
+h2,
+h6 {
   color: dodgerblue;
 }
-input{
+
+input {
   width: 60%;
   padding: 10px 5px;
   text-align: center;
@@ -33,35 +40,14 @@ input{
   border: none;
   background: lightgray;
 }
-button{
+
+button {
   padding: 10px 5px;
   width: 45%;
   border: none;
 }
-.btnAdicionarNome{
-  width: 30%;
-  margin: 10px 0;
-  background: dodgerblue;
-  color: white;
-}
-.btnSortear{
-  background: seagreen;
-  color: white;
-}
-.btnReiniciar{
-  background: indianred;
-  color: white;
-}
-.outrosBotoes{
-  text-align: center;
-}
-.infor{
-  color: coral;
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-}
-ul{
+
+ul {
   list-style-type: none;
   margin-bottom: 20px;
   height: 200px;
@@ -69,7 +55,8 @@ ul{
   border: 2px solid lightgray;
   border-radius: 10px;
 }
-li{
+
+li {
   background: seagreen;
   color: white;
   margin: 5px;
@@ -79,16 +66,48 @@ li{
   text-align: center;
   border-radius: 5px;
 }
-.nota{
-  padding: 0 10px;
-  font-size: 12px;
-}
-footer{
+
+footer {
   margin-top: 10px 0;
   text-align: center;
 }
-a{
+
+a {
   text-decoration: none;
   color: gray;
   font-size: 10px;
+}
+
+/* classes */
+.btnAdicionar {
+  width: 30%;
+  margin: 10px 0;
+  background: dodgerblue;
+  color: white;
+}
+
+.btnSortear {
+  background: seagreen;
+  color: white;
+}
+
+.btnReiniciar {
+  background: indianred;
+  color: white;
+}
+
+.outrosBotoes {
+  text-align: center;
+}
+
+.infor {
+  color: coral;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.nota {
+  padding: 0 10px;
+  font-size: 12px;
 }

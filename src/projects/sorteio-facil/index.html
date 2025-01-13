@@ -15,26 +15,27 @@
     <h1>SORTEIO FÁCIL</h1>
     <hr>
     <div class="infor">
-      <h3>Resultado: <span id="numeroDoSorteio">_</span>º</h3>
+      <h3>Resultado: <span id="numeroDoSorteio">0</span>º</h3>
       <h3><span id="outData">--/--/----</span>‐<span id="outHora">--:--</span></h3>
     </div>
-    
+
     <h2 id="ganhador">...</h2>
 
     <div class="outrosBotoes">
       <input type="text" name="" id="inNome">
-      <button onclick="addNomeNaLista()" id="btnAdicionarNome" class="btnAdicionarNome">ADICIONAR</button>
+      <button onclick="addNomeNaLista()" id="btnAdicionar" class="btnAdicionar">ADICIONAR</button>
     </div>
+    <h6>Adicionados: <span id="totalNaLista">0</span></h6>
 
     <ul id="outLista"></ul>
 
     <div class="outrosBotoes">
-      <button class="btnSortear" onclick="sortearNome()" id="btnRealizarSorteio">&#x1f3b2 SORTEAR</button>
+      <button class="btnSortear" onclick="sortearNome()" id="btnSortear">&#x1f3b2 SORTEAR</button>
       <button class="btnReiniciar" onclick="reiniciar()" id="btnReiniciar">&#x1f5d1 LIMPAR</button>
     </div>
     <br><br>
     <p class="nota"><strong>*Atualização:</strong> Não será necessário reinserir todos os dados, caso deseje sortear um próximo.</p>
-    <br><br>
+    <br>
 
     <footer>
       <a href="#">&copy; Desenvolvido por José Murilo | 2024</a>
