@@ -17,7 +17,7 @@ setInterval(() => {
   outHora.textContent = inforHora();
 }, 1000);
 
-// usar tecla enter para inserção 
+// usar tecla enter para inserção de dados
 inNome.addEventListener('keydown', (e) => {
   if(e.keyCode === 13){
     addNomeNaLista();
