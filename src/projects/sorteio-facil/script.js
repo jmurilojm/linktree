@@ -12,7 +12,10 @@ let listaDeNomes = [];
 inNome.focus();
 let sorteios = 0;
 outData.textContent = inforData();
-outHora.textContent = inforHora();
+//outHora.textContent = inforHora();
+setInterval(() => {
+  outHora.textContent = inforHora();
+}, 1000);
 
 // usar tecla enter para inserção 
 inNome.addEventListener('keydown', (e) => {
@@ -74,7 +77,7 @@ function sortearNome(){
   numeroDoSorteio.textContent = sorteios;
   
   // atualizar hora
-  outHora.textContent = inforHora();
+  //outHora.textContent = inforHora();
 }
 
 function inforData(){
@@ -90,7 +93,7 @@ function inforHora() {
   const hora = acrescentarZero(data.getHours());
   const min = acrescentarZero(data.getMinutes());
   const seg = acrescentarZero(data.getSeconds());
-  return `${hora}:${min}`;
+  return `${hora}:${min}:${seg}`;
 }
 
 function acrescentarZero(elemento){
