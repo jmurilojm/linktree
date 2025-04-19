@@ -18,6 +18,22 @@ setInterval(() => {
   outHora.textContent = inforHora();
 }, 1000);
 
+// verificar data e se ja houve sorteio
+let dataverificada = localStorage.getItem('data')
+let data = new Date()
+  const dia = acrescentarZero(data.getDate());
+  const mes = acrescentarZero(data.getMonth() + 1);
+  const ano = data.getFullYear();
+let formatoDeData = `${dia}/${mes}/${ano}`
+
+if(dataverificada == formatoDeData){
+  alert(`Você já fez um sorteio hoje!\n\nVencedor: ${localStorage.getItem('sorteado').toUpperCase()}`)
+} else{
+  alert(`Atenção!\n\nLimite de um sorteio por dia!`)
+  localStorage.removeItem('data')
+  localStorage.removeItem('sorteado')
+}
+
 // usar tecla enter para inserção de dados
 inNome.addEventListener('keydown', (e) => {
   if (e.keyCode === 13) {
@@ -55,6 +71,13 @@ function imprimirLista() {
 }
 
 function sortearNome() {
+  // verificar se houver sorteio no dia
+let sorteioRealizado = localStorage.getItem('sorteado')
+if(sorteioRealizado){
+  alert(`O Sorteio de hoje já foi realizado!\n\nVencedor: ${sorteioRealizado.toUpperCase()}`)
+  return
+}
+
   // verificar se há nomes suficientes
   if (listaDeNomes.length < 2) {
     alert('Cadastre pelo menos dois Nomes!');
@@ -67,6 +90,18 @@ function sortearNome() {
   let numeroAleatorio = Math.floor(Math.random() * quantidadeDeNomes);
   // o ganhador é quem esta na posição aleatória 
   let nomeDoGanhador = listaDeNomes[numeroAleatorio];
+
+  // limitar sorteio:
+  let data = new Date()
+  const dia = acrescentarZero(data.getDate());
+  const mes = acrescentarZero(data.getMonth() + 1);
+  const ano = data.getFullYear();
+  const hora = acrescentarZero(data.getHours());
+  const min = acrescentarZero(data.getMinutes());
+  const seg = acrescentarZero(data.getSeconds());
+  localStorage.setItem("sorteado",`${nomeDoGanhador}\n\nData: ${dia}/${mes}/${ano} às ${hora}:${min}:${seg}`)
+
+  localStorage.setItem('data',`${dia}/${mes}/${ano}`)
 
   // exibir ganhador na tela
   ganhador.innerHTML = `Parabéns ${nomeDoGanhador}!`;
