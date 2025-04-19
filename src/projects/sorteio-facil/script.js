@@ -28,10 +28,12 @@ let formatoDeData = `${dia}/${mes}/${ano}`
 
 if(dataverificada == formatoDeData){
   alert(`Você já fez um sorteio hoje!\n\nVencedor: ${localStorage.getItem('sorteado').toUpperCase()}`)
+  ganhador.innerHTML = `Sorteado(a) de hoje, ${dia}/${mes}:\n${localStorage.getItem('vencedor').toUpperCase()}`
 } else{
   alert(`Atenção!\n\nLimite de um sorteio por dia!`)
   localStorage.removeItem('data')
   localStorage.removeItem('sorteado')
+  localStorage.removeItem('vencedor')
 }
 
 // usar tecla enter para inserção de dados
@@ -102,6 +104,7 @@ if(sorteioRealizado){
   localStorage.setItem("sorteado",`${nomeDoGanhador}\n\nData: ${dia}/${mes}/${ano} às ${hora}:${min}:${seg}`)
 
   localStorage.setItem('data',`${dia}/${mes}/${ano}`)
+  localStorage.setItem('vencedor',nomeDoGanhador)
 
   // exibir ganhador na tela
   ganhador.innerHTML = `Parabéns ${nomeDoGanhador}!`;
