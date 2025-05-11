@@ -18,8 +18,9 @@ setInterval(() => {
   outHora.textContent = inforHora();
 }, 1000);
 
+// LINHAS UTILIZADAS PARA COLOCAR LIMITAÇÃO EM UM SORTEIO DIÁRIO;
 // verificar data e se ja houve sorteio
-let dataverificada = localStorage.getItem('data')
+/*let dataverificada = localStorage.getItem('data')
 let data = new Date()
   const dia = acrescentarZero(data.getDate());
   const mes = acrescentarZero(data.getMonth() + 1);
@@ -34,7 +35,7 @@ if(dataverificada == formatoDeData){
   localStorage.removeItem('data')
   localStorage.removeItem('sorteado')
   localStorage.removeItem('vencedor')
-}
+}*/
 
 // usar tecla enter para inserção de dados
 inNome.addEventListener('keydown', (e) => {
@@ -73,12 +74,13 @@ function imprimirLista() {
 }
 
 function sortearNome() {
+  // LINHAS UTILIZADAS PARA COLOCAR LIMITAÇÃO EM UM SORTEIO DIÁRIO;
   // verificar se houver sorteio no dia
-let sorteioRealizado = localStorage.getItem('sorteado')
+/*let sorteioRealizado = localStorage.getItem('sorteado')
 if(sorteioRealizado){
   alert(`O Sorteio de hoje já foi realizado!\n\nVencedor: ${sorteioRealizado.toUpperCase()}`)
   return
-}
+}*/
 
   // verificar se há nomes suficientes
   if (listaDeNomes.length < 2) {
@@ -101,10 +103,12 @@ if(sorteioRealizado){
   const hora = acrescentarZero(data.getHours());
   const min = acrescentarZero(data.getMinutes());
   const seg = acrescentarZero(data.getSeconds());
-  localStorage.setItem("sorteado",`${nomeDoGanhador}\n\nData: ${dia}/${mes}/${ano} às ${hora}:${min}:${seg}`)
+
+  // LINHAS UTILIZADAS PARA COLOCAR LIMITAÇÃO EM UM SORTEIO DIÁRIO;
+  /*localStorage.setItem("sorteado",`${nomeDoGanhador}\n\nData: ${dia}/${mes}/${ano} às ${hora}:${min}:${seg}`)
 
   localStorage.setItem('data',`${dia}/${mes}/${ano}`)
-  localStorage.setItem('vencedor',nomeDoGanhador)
+  localStorage.setItem('vencedor',nomeDoGanhador)*/
 
   // exibir ganhador na tela
   ganhador.innerHTML = `Parabéns ${nomeDoGanhador}!`;
