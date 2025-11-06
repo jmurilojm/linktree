@@ -111,7 +111,7 @@ if(sorteioRealizado){
   localStorage.setItem('vencedor',nomeDoGanhador)*/
 
   // exibir ganhador na tela
-  ganhador.innerHTML = `Parabéns ${nomeDoGanhador}!`;
+  ganhador.innerHTML = `Parabéns, ${nomeDoGanhador}!`;
   // remover o sorteado das listas e atualizar
   const liSorteada = outLista.children[numeroAleatorio];
   outLista.removeChild(liSorteada);
